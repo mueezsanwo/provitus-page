@@ -1,0 +1,145 @@
+/* General Header Layout */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 100px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  /* Constrain content width and add side padding */
+.header-inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #4caf50;
+    gap: 10px; /* space between image and text */
+  }
+  
+  .logo-image {
+    height: 32px; /* adjust as needed */
+    width: auto;
+  }
+  
+  
+  /* Navigation and buttons take 75% */
+  .nav-container {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #191A23;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #4caf50;
+  }
+  
+  /* Button Styling */
+  .header-button {
+    background-color: transparent;
+    color: #191A23;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .header-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Hide/show depending on screen size */
+  .desktop-only {
+    display: block;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      max-width: 100%;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      width: 100%;
+      padding-top: 10px;
+    }
+  
+    .nav-container.active {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .desktop-only {
+      display: none;
+    }
+  
+    .mobile-only {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 25px;
+      right: 40px;
+    }
+  }
+  
