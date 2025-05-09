@@ -159,6 +159,7 @@
   cursor: not-allowed;
   margin-right: 8px;
   position: relative;
+  top: 3px;
 }
 
 /* When checked, make the background green */
@@ -179,6 +180,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 
@@ -191,6 +193,7 @@
   .radio-buttons {
     margin-bottom: 20px;
     margin-left: -10px;
+    
   }
   
   .radio-buttons label {

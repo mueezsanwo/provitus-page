@@ -137,7 +137,7 @@ body {
       justify-content: flex-start;
       width: 50%;
       padding-left: 0;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       margin-left: 1px;
       color: black;
       font-size: 30px;
