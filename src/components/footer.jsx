@@ -47,8 +47,19 @@ const Footer = () => {
         </div>
 
         <div className="footer-newsletter">
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email" className='email' />
           <button>Subscribe to news</button>
+        </div>
+        <div className="footer-social2 two">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src={facebook} alt="Facebook" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src={twitter} alt="Twitter" />
+          </a>
         </div>
       </div>
 

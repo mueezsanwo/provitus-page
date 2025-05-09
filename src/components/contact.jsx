@@ -4,6 +4,7 @@ import illustration3 from '../images/illustration3.png';
 
 const Contact = () => {
   return (
+    <div className="contact-wrapper">
     <div className="contact-us">
       <div className="form-container">
         <form className="contact-form">
@@ -62,7 +63,7 @@ const Contact = () => {
             ></textarea>
           </div>
           
-          <button type="button" className="submit-button" disabled>
+          <button type="button" className="submit-button inside" disabled>
             Send Message
           </button>
         </form>
@@ -72,6 +73,14 @@ const Contact = () => {
         <img src={illustration3} alt="Contact Us" />
       </div>
     </div>
+    <div className='button-wrapper'>
+    <button type="button" className="submit-button outside" disabled>
+            Send Message
+          </button>
+          </div>   
+    </div> 
+      
+    
   );
 };
 

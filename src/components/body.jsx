@@ -114,7 +114,7 @@ const Body = () => {
       <div key={index} className={`card ${card.className}`}>
         <div className="card-text">
           <h3>{card.title}</h3>
-          <button className="card-button">
+          <button className="card-button button-text">
             <img
               src={card.buttonIcon}
               alt={`${card.title} icon`}
@@ -154,6 +154,7 @@ const Body = () => {
       </div>
 
       {/* New Card with Three Text Sections */}
+      <div className='jobs'>
 <div className="card-three-columns">
   <div className="card-section">
     <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
@@ -168,10 +169,15 @@ const Body = () => {
     <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
     <button>learn more <img src={arrow3} alt='logo' className='logo' /> </button>
   </div>
+
+  {/* Mobile version:  */}
+  </div>
+  <div className=" mobile">
+  </div>
 </div>
 
 <div className="info-row">
-      <h2 className="info-header"> Our Working Process</h2>
+      <h2 className="info-header"> Our Working<br /> Process</h2>
         <p className="info-text steps"> 
         Step-by-Step Guide to Achieving Your Business Goals
         </p>
@@ -286,6 +292,7 @@ const Body = () => {
       </div>
 
       {/* Testimonial Card */}
+<div className="testimonial-wrapper">     
 <div className="testimonial-card">
   <div className="testimonial-box-container">
     {/* First Testimonial (half visible) */}
@@ -333,7 +340,7 @@ const Body = () => {
     <img src={arrowright} alt='arrow' className='arrow2' />
   </div>
 </div>
-
+</div> 
 
 <div className="info-row">
       <h2 className="info-header">Contact Us</h2>

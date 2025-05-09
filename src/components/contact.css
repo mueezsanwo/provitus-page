@@ -1,16 +1,20 @@
 /* Contact Us Section */
+.contact-wrapper {
+  max-width: 1200px; 
+  margin: 0 auto;    
+  padding: 0 20px; 
+}
+
 .contact-us {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
-  padding: 60px;
+  padding: 40px 20px;
+  gap: 40px;
   background-color: #f3f3f3;
-  gap: 50px;
-  border-radius: 25px;
-  margin-bottom: 50px;
+  border-radius: 45px;
   }
   
   .contact-container {
@@ -26,7 +30,7 @@
   .form-container {
     flex: 1;
     max-width: 50%;
-    padding-right: 30px;
+    padding-left: 30px;
   }
   
   .image-container {
@@ -45,6 +49,92 @@
     transform: translateX(50%);
 
   }
+
+  .submit-button.outside {
+    display: none;
+  }
+  
+  .submit-button.inside {
+    display: inline-block;
+  }
+
+  .button-wrapper {
+    display: none; /* Hidden by default */
+  }
+  
+  /* Show and center on small screens */
+  @media (max-width: 768px) {
+    .button-wrapper {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-us {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 75%;
+    }
+
+    .submit-button.inside {
+      display: none;
+    }
+
+  
+      .submit-button.outside {
+        display: block;
+        width: 85%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 40px auto 0 auto; /* Centers the button horizontally and adds top margin */
+        font-size: 16px;
+        padding: 22px 20px
+      }
+    
+  
+    .form-container {
+      max-width: 100%;
+      padding: 0 5px;
+      padding-left: 0px;
+    }
+  
+    .image-container {
+      display: none;
+    }
+  
+    .contact-form {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .form-field input,
+    .form-field textarea {
+      width: 100%;
+    }
+  
+    /* .submit-button {
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px;
+    } */
+  }
+  
 
   
   
@@ -156,25 +246,5 @@
     outline: none;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .contact-container {
-      flex-direction: column;
-      align-items: center;
-    }
   
-    .form-container {
-      padding-right: 0;
-      margin-bottom: 30px;
-    }
-  
-    .image-container img {
-      max-width: 100%;
-    }
-  
-    .submit-button {
-      font-size: 16px;
-      padding: 12px 20px;
-    }
-  }
   

@@ -30,7 +30,7 @@ const NavBar = () => {
       <button className="header-button desktop-only">Request a quote</button>
     </div>
 
-    <div className="hamburger" onClick={toggleMenu}>
+    <div className="hamburger">
       ☰
     </div>
   </div>
